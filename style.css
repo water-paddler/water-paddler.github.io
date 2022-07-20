@@ -49,6 +49,8 @@ h2 {
   width: 20px;
   overflow: visible;
   position: relative;
+  cursor: default;
+  user-select: none;
 }
 
 #all {
