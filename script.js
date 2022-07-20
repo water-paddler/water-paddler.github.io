@@ -12,7 +12,7 @@ var container = document.getElementById('animate');
 var emoji = ['👩‍💻', '👨‍💻', '🧑‍💻', '🚣‍♀️', '🚣‍♂️', '🚣', '🛶', '🚩', '🌏', '⌨️', '📱', '💻', '🏴‍☠️', '🔥', '✨', '0️⃣', '1️⃣'];
 var circles = [];
 
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 8; i++) {
   addCircle(i * 150, [10 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 150, [10 + 0, -300], emoji[Math.floor(Math.random() * emoji.length)]);
   addCircle(i * 150, [10 - 200, -300], emoji[Math.floor(Math.random() * emoji.length)]);
@@ -46,7 +46,7 @@ function Circle(x, y, c, v, range) {
   /*this.element.style.display = 'block';*/
   this.element.style.opacity = 0;
   this.element.style.position = 'absolute';
-  this.element.style.fontSize = '26px';
+  this.element.style.fontSize = '40px';
   this.element.style.color = 'hsl('+(Math.random()*360|0)+',80%,50%)';
   this.element.innerHTML = c;
   container.appendChild(this.element);
