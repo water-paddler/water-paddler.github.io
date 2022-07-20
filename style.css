@@ -15,28 +15,50 @@ body {
   height: 100vh;
 }
 
-.linear-gradient {
+#linear-gradient {
   background: linear-gradient(#80ffdb, #5390d9);
   height: 100vh;
   width: 100vw;
 }
 
-#text {
+#main-container {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+#social-email {
+  color: #144c84
+}
+
+#social-github {
+  color: #6e5494
+}
+
+#social-twitter {
+  color: #00acee
 }
 
 h2 {
   color: #fff;
   font-size: 68px;
-  line-height: 40px;
+  line-height: 20px;
   font-family: 'Ubuntu', sans-serif;
 }
 
-#container {
+#emoji-layer {
   left: 0px;
   top: -100px;
   height: calc(100vh + 100px);
@@ -53,11 +75,12 @@ h2 {
   user-select: none;
 }
 
-#all {
+#emoji-container {
   overflow: hidden;
   height: 100vh;
   width: 100%;
   position: fixed;
+  pointer-events: none;
 }
 
 #footer {
@@ -87,6 +110,6 @@ p {
 
 a:hover {
   color: #fff;
-  letter-spacing: 2px;
+  transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
