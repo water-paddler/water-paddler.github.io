@@ -54,8 +54,9 @@ body {
 h2 {
   color: #fff;
   font-size: 68px;
-  line-height: 20px;
+  line-height: 68px;
   font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 15px;
 }
 
 #emoji-layer {
